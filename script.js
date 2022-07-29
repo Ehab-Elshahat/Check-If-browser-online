@@ -21,12 +21,14 @@ button.onclick = function() {
 
 function online() {
   body.classList.add("online");
-  h2.innerHTML = "browser is online"
+  h2.innerHTML = "browser is online";
+  button.classList.add("hide")
 }
 
 function offline() {
   body.classList.remove("online")
   h2.innerHTML = "browser is offline"
+  button.classList.remove("hide")
 
 }
 

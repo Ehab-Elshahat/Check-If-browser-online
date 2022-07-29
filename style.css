@@ -36,3 +36,7 @@ button {
   -o-border-radius: 20px;
   cursor: pointer;
 }
+
+button.hide {
+  display: none;
+}
