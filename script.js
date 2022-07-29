@@ -2,17 +2,17 @@ let h2 = document.querySelector("h2");
 let body = document.querySelector("body")
 let button = document.querySelector("button")
 
-window.onload = function (){
-  if(window.navigator.onLine){
+window.onload = function () {
+  if (window.navigator.onLine) {
     online();
   } else {
     offline()
   }
 }
 
-button.onclick = function() {
+button.onclick = function () {
   window.location.reload()
-  if(window.navigator.onLine){
+  if (window.navigator.onLine) {
     online();
   } else {
     offline()
@@ -32,5 +32,5 @@ function offline() {
 
 }
 
-window.addEventListener('online',online)
-window.addEventListener('offline',offline)
+window.addEventListener('online', online)
+window.addEventListener('offline', offline)
